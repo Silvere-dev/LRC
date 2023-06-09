@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation des EndPoints</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Liste des end points</h1>
+
+    <section>
+      <h2>Base</h2>
+      <div><span>Adresse Ip : </span> <span>192.168.100.17</span></div>
+      <div><span>Port : </span> <span>4400</span></div>
+    </section>
+
+    <section>
+      <h2>Absence</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/absence"
+        >/lrcsheet/api/absence</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/absence"
+        >/lrcsheet/api/absence/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>startDate[Date]</li>
+        <li>endDate[Date]</li>
+        <li>duratio[Integer]</li>
+        <li>
+          validation["non lu", "refusée", "acceptée", "en cours", "terminée",
+          "annulée"]
+        </li>
+        <li>description[String]</li>
+        <li>TypeAbsenceId[Integer]</li>
+        <li>EmployeeId[Integer]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Attendance</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/Attendance"
+        >/lrcsheet/api/Attendance</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/Attendance"
+        >/lrcsheet/api/Attendance/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        ????
+      </ul>
+    </section>
+
+    <section>
+      <h2>City</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/city"
+        >/lrcsheet/api/city</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/city"
+        >/lrcsheet/api/city/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>name[String]</li>
+        <li>CountryId[Integer]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Country</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/country"
+        >/lrcsheet/api/country</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/country"
+        >/lrcsheet/api/country/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>name[String]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Department</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/department"
+        >/lrcsheet/api/department</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/department"
+        >/lrcsheet/api/department/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>title[String]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Employee</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/employee"
+        >/lrcsheet/api/employee</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/employee"
+        >/lrcsheet/api/employee/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>lastname[String]</li>
+        <li>firstname[String]</li>
+        <li>gender["homme", "femme"]</li>
+        <li>address[String]</li>
+        <li>phone[String]</li>
+        <li>mail[Mail]</li>
+        <li>matricule[String]</li>
+        <li>password[String]</li>
+        <li>photo[String]</li>
+        <li>CityId[Integer]</li>
+        <li>CountryId[Integer]</li>
+        <li>PositionId[Integer]</li>
+        <li>ServiceId[Integer]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Position</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/position"
+        >/lrcsheet/api/position</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/position"
+        >/lrcsheet/api/position/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>title[String]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Reason</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/reason"
+        >/lrcsheet/api/reason</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/reason"
+        >/lrcsheet/api/reason/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>description[String]</li>
+        <li>status["non lu", "lu"]</li>
+        <li>AdminId[Integer]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Task</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/task"
+        >/lrcsheet/api/task</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/task"
+        >/lrcsheet/api/task/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>description[String]</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>TypeAbsence</h2>
+      <span>Get All</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/typeAbsence"
+        >/lrcsheet/api/typeAbsence</a
+      >
+      <br /><br />
+      <span>Get</span>
+      <a href="http://141.136.36.22:8090/lrcsheet/api/task"
+        >/lrcsheet/api/typeAbsence/:id</a
+      >
+      <br /><br />
+      <span>Post</span>
+      <ul>
+        <li>description[String]</li>
+      </ul>
+    </section>
+  </body>
+</html>
